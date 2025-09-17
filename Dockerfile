@@ -6,6 +6,7 @@ RUN pip install --no-cache-dir opencv-python scikit-image
 # install custom nodes using comfy-cli
 RUN comfy-node-install comfyui-kjnodes rgthree-comfy comfyui_ultimatesdupscale comfyui-propost comfyui_face_parsing
 
+
 # download models using comfy-cli
 # the "--filename" is what you use in your ComfyUI workflow
 RUN comfy model download --url https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/main/RealVisXL_V5.0_Lightning_fp16.safetensors --relative-path models/checkpoints --filename realvisxlV50_v50LightningBakedvae.safetensors
