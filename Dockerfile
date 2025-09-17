@@ -1,8 +1,14 @@
 # start from a clean base image (replace <version> with the desired release)
 FROM runpod/worker-comfyui:5.1.0-base
 
-RUN pip install --no-cache-dir opencv-python scikit-image imageio pillow
-
+RUN pip install --no-cache-dir \
+    pillow>=10.3.0 \
+    scipy \
+    color-matcher \
+    matplotlib \
+    huggingface_hub \
+    mss \
+    opencv-python
 # install custom nodes using comfy-cli
 RUN comfy-node-install comfyui-kjnodes rgthree-comfy comfyui_ultimatesdupscale comfyui-propost comfyui_face_parsing
 
