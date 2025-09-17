@@ -2,7 +2,7 @@
 FROM runpod/worker-comfyui:5.1.0-base
 
 # install custom nodes using comfy-cli
-RUN comfy-node-install rgthree-comfy ComfyUI_UltimateSDUpscale comfyui-propost comfyui_face_parsing
+RUN comfy-node-install rgthree-comfy comfyui_ultimatesdupscale comfyui-propost comfyui_face_parsing
 
 # download models using comfy-cli
 # the "--filename" is what you use in your ComfyUI workflow
