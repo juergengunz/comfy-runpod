@@ -19,4 +19,5 @@ RUN comfy-node-install comfyui-kjnodes rgthree-comfy comfyui_ultimatesdupscale c
 RUN comfy model download --url https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/main/RealVisXL_V5.0_Lightning_fp16.safetensors --relative-path models/checkpoints --filename realvisxlV50_v50LightningBakedvae.safetensors
 RUN comfy model download --url https://huggingface.co/juergengunz/skin-lora/resolve/main/skin_4-000015.safetensors --relative-path models/loras --filename skin_4-000015.safetensors
 RUN comfy model download --url https://huggingface.co/juergengunz/skin-lora/resolve/main/8xNMKDFaces160000G_v10.pt --relative-path models/upscale_models --filename 8xNMKDFaces160000G_v10.pt
+RUN comfy model download --url https://huggingface.co/Kim2091/UltraSharpV2/resolve/main/4x-UltraSharpV2.safetensors --relative-path models/upscale_models --filename 4x-UltraSharpV2.safetensors
 
